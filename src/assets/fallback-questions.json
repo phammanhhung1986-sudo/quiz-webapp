@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "question": "Thủ đô nước Việt Nam là gì?",
+    "options": [
+      "Hà Nội",
+      "Hồ Chí Minh",
+      "Đà Nẵng",
+      "Hải Phòng"
+    ],
+    "correct": "Hà Nội",
+    "type": "multiple",
+    "explanation": "Hà Nội là thủ đô."
+  }
+]

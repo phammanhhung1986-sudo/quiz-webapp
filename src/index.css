@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --light-grad-start: #3B82F6;
+  --light-grad-end: #A78BFA;
+  --dark-grad-start: #4C1D95;
+  --dark-grad-end: #1E40AF;
+}
+html,body,#root{height:100%;}
+body{
+  font-family: 'Roboto', system-ui, -apple-system, 'Segoe UI', Roboto;
+  background: linear-gradient(135deg, var(--light-grad-start), var(--light-grad-end));
+  min-height:100vh;
+  -webkit-font-smoothing:antialiased;
+}
+.dark body{
+  background: linear-gradient(135deg, var(--dark-grad-start), var(--dark-grad-end));
+}
+.glass { background-color: rgba(255,255,255,0.08); backdrop-filter: blur(8px); border-radius: 20px; box-shadow: 0 8px 30px rgba(2,6,23,0.2); }
+.dark .glass { background-color: rgba(0,0,0,0.28); }
+.ripple { position: relative; overflow: hidden; }
+.ripple:after { content: ""; display:block; position:absolute; border-radius:50%; transform:scale(0); opacity:0.6; background: rgba(255,255,255,0.2); transition: transform 0.6s, opacity 1s; }
+.ripple:active:after { transform: scale(12); opacity:0; transition: 0s; }
